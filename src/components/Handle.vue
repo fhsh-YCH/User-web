@@ -1,3 +1,22 @@
+<script setup>
+import { ref } from "vue";
+
+const one = ref("https://www.example.com");
+const two = ref("https://www.example.com");
+const three = ref("https://www.example.com");
+const four = ref("https://www.example.com");
+const five = ref("https://www.example.com");
+const six = ref("https://www.example.com");
+const seven = ref("https://www.example.com");
+const eight = ref("https://www.example.com");
+const nine = ref("https://www.example.com");
+const ten = ref("https://www.example.com");
+const eleven = ref("https://www.example.com");
+const twelve = ref("https://www.example.com");
+const thirteen = ref("https://www.example.com");
+const fourteen = ref("https://www.example.com");
+const fourtyfour = ref("https://www.example.com");
+</script>
 <template>
   <!-- Desktop -->
   <div id="handlee" class="hidden md:hidden lg:block">
@@ -20,21 +39,21 @@
           <div class="border-dashed border-2 border-black rounded-xl px-8 py-4">
             <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
             <ul class="list-disc pt-4 pl-6 leading-10">
-              <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
-              <a><li>新生線上訂購校服流程說明</li></a>
-              <a><li>復興高中新生校服介紹</li></a>
+              <a :href="three"><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
+              <a :href="four"><li>新生線上訂購校服流程說明</li></a>
+              <a :href="five"><li>復興高中新生校服介紹</li></a>
             </ul>
           </div>
           <br />
           <div class="border-dashed border-2 border-black rounded-xl px-8 py-4">
             <span class="text-[#34559D]">校務系統新生填寫資料</span>
             <ul class="list-disc pt-4 pl-6 leading-10">
-              <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
-              <a><li>學生受款帳戶登記說明</li></a>
-              <a><li>校務系統新生填寫應備資料說明</li></a>
-              <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
-              <a><li>校務系統高一多元選修選課說明(普體)</li></a>
-              <a><li>數位學生證整合服務說明</li></a>
+              <a :href="eight"><li>新生填寫資料(7/21鏈結校務系統)</li></a>
+              <a :href="ten"><li>校務系統新生填寫應備資料說明</li></a>
+              <a :href="twelve"><li>校務系統高一多元選修選課說明(普體)</li></a>
+              <a :href="nine"><li>學生受款帳戶登記說明</li></a>
+              <a :href="eleven"><li>教育部12年國教免學費補助查調說明</li></a>
+              <a :href="fourtyfour"><li>數位學生證整合服務說明</li></a>
             </ul>
           </div>
         </div>
@@ -50,24 +69,24 @@
           <div class="border-dashed border-2 border-black rounded-xl px-8 py-4">
             <span class="text-[#9D3434]">學雜費減免申請</span>
             <ul class="list-disc pt-4 pl-6 leading-10">
-              <a><li>學雜費減免申請鏈結表單</li></a>
-              <a><li>學雜費減免申請說明</li></a>
+              <a :href="one"><li>學雜費減免申請鏈結表單</li></a>
+              <a :href="two"><li>學雜費減免申請說明</li></a>
             </ul>
           </div>
           <br />
           <div class="border-dashed border-2 border-black rounded-xl px-8 py-4">
             <span class="text-[#9D3434]">就學貸款申請</span>
             <ul class="list-disc pt-4 pl-6 leading-10">
-              <a><li>就學貸款申請鏈結表單</li></a>
-              <a><li>就學貸款申請說明</li></a>
+              <a :href="six"><li>就學貸款申請鏈結表單</li></a>
+              <a :href="seven"><li>就學貸款申請說明</li></a>
             </ul>
           </div>
           <br />
           <div class="border-dashed border-2 border-black rounded-xl px-8 py-4">
             <span class="text-[#9D3434]">學生住宿申請</span>
             <ul class="list-disc pt-4 pl-6 leading-10">
-              <a><li>學生住宿申請鏈結表單</li></a>
-              <a><li>學生住宿申請說明</li></a>
+              <a :href="thirteen"><li>學生住宿申請鏈結表單</li></a>
+              <a :href="fourteen"><li>學生住宿申請說明</li></a>
             </ul>
           </div>
         </div>
@@ -94,7 +113,7 @@
         <div class="bg-white rounded-r-xl p-5 md:py-10">
           <div class="border-dashed border border-black rounded-xl p-3">
             <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
-            <ul class="list-disc pt-2 pl-4 leading-8 text-sm">
+            <ul class="list-disc pt-2 pl-4 leading-10 text-sm">
               <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
               <a><li>新生線上訂購校服流程說明</li></a>
               <a><li>復興高中新生校服介紹</li></a>

@@ -48,13 +48,7 @@ const closeModel = () => {
                   >新生線上報到</a
                 >
               </li>
-              <li class="pt-8">
-                <a
-                  class="bg-white rounded-full font-black text-[#34559D] py-3 px-8"
-                  href=""
-                  >輔導選課手冊</a
-                >
-              </li>
+
               <li class="pt-8">
                 <a
                   class="bg-white rounded-full font-black text-[#34559D] py-3 px-8"
@@ -102,6 +96,13 @@ const closeModel = () => {
                   class="bg-white rounded-full font-black text-[#34559D] py-3 px-5"
                   href="linegroup"
                   >高一LINE家長群</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="bg-white rounded-full font-black text-[#34559D] py-3 px-8"
+                  href=""
+                  >輔導選課手冊</a
                 >
               </li>
             </ul>

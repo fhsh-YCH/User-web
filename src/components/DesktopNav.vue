@@ -32,7 +32,6 @@ import { ref } from "vue";
 const navItems = [
   { label: "新生入學時程表", target: "timeline" },
   { label: "新生線上報到", target: "register" },
-  { label: "輔導選課手冊", target: "handbook" },
   { label: "入學說明簡報", target: "presentation" },
   { label: "暑假作業", target: "homework" },
   { label: "應辦＆選辦事項", target: "handlee" },
@@ -40,6 +39,7 @@ const navItems = [
   { label: "其他宣導事項", target: "otherprecautions" },
   { label: "學校簡介", target: "profile" },
   { label: "高一LINE家長群", target: "linegroup" },
+  { label: "輔導選課手冊", target: "handbook" },
 ];
 
 const currentIndex = ref(null);
