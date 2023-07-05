@@ -1167,3 +1167,7 @@ const fourtyfour = ref("https://www.example.com");
     </div>
   </div>
 </template>
+urls.one = data.one;
+    urls.two = data.two;
+    urls.three = data.three;
+    // ...以此類推，設定其他的變數

@@ -15,7 +15,7 @@ import Foooter from "./components/Footer.vue";
 
 <template>
   <div
-    class="h-mobile-screen w-screen lg:h-screen overflow-x-hidden bg-[#FAF7EF]"
+    class="h-mobile-screen w-screen overflow-x-hidden bg-[#FAF7EF] lg:h-screen"
   >
     <!-- nav bar -->
     <NavBar />
@@ -35,7 +35,7 @@ import Foooter from "./components/Footer.vue";
     <Precautions />
     <!-- 學校簡介 -->
     <Profile />
-    <div class="grid lg:grid-cols-2 md:grid-cols-2">
+    <div class="grid md:grid-cols-2 lg:grid-cols-2">
       <!-- 高一line家長群 -->
       <Line />
       <!-- 選課輔導手冊 -->
