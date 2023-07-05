@@ -71,15 +71,15 @@ const temp_datas = [
 ];
 </script>
 <template>
-  <div id="date" class="flex justify-center pt-12 pb-2">
+  <div id="date" class="flex justify-center pb-2 pt-12">
     <span
-      class="bg-[#34559D] px-3 py-2 md:text-xl md:px-4 md:py-1 lg:px-6 lg:py-2 lg:text-2xl text-white rounded-md shadow-md"
+      class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >
       新生實體到校日期
     </span>
   </div>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 px-24 gap-x-14 gap-y-3"
+    class="grid grid-cols-1 gap-x-14 gap-y-3 px-8 sm:grid-cols-2 lg:px-24 xl:grid-cols-3"
   >
     <DateAnnounce
       v-for="(data, index) in temp_datas"

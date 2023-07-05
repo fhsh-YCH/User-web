@@ -96,17 +96,17 @@ const temp_datas = [
 <template>
   <div id="otherprecautions" class="flex justify-center pt-12">
     <span
-      class="bg-[#34559D] px-3 py-2 md:text-xl md:px-4 md:py-1 lg:px-6 lg:py-2 lg:text-2xl text-white rounded-t-md shadow-md"
+      class="rounded-t-md bg-[#34559D] px-3 py-2 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >
       其他注意事項
     </span>
   </div>
-  <div class="flex justify-center items-center">
+  <div class="flex items-center justify-center">
     <div
-      class="bg-white border-2 border-[#34559D] py-2 px-2 md:py-10 lg:px-4 lg:py-12 rounded-xl"
+      class="rounded-xl border-2 border-[#34559D] bg-white px-4 py-2 md:py-10 lg:px-4 lg:py-12"
     >
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 px-24 gap-x-14 gap-y-3"
+        class="grid grid-cols-1 gap-x-14 gap-y-3 sm:grid-cols-2 lg:px-24 xl:grid-cols-3"
       >
         <Other
           v-for="(data, index) in temp_datas"
