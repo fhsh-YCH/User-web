@@ -1,5 +1,6 @@
 <script setup>
 import Other from "../componentss/Other.vue";
+import { datas } from "../utils.js";
 const temp_datas = [
   {
     content: "語文競賽增額報名(教學組)",
@@ -109,10 +110,10 @@ const temp_datas = [
         class="grid grid-cols-1 gap-x-14 gap-y-3 sm:grid-cols-2 lg:px-24 xl:grid-cols-3"
       >
         <Other
-          v-for="(data, index) in temp_datas"
-          :href="data.href"
-          :content_line1="data.content.slice(0, data.splitNumber)"
-          :content_line2="data.content.slice(data.splitNumber)"
+          v-for="(data, index) in datas.notice"
+          :href="data.link"
+          :content_line1="data.title.slice(0, data.splitNumber)"
+          :content_line2="data.title.slice(data.splitNumber)"
           :class="{
             'justify-self-end ': index % 2 === 0,
           }"
