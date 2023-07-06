@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h-mobile-screen {
+  @apply h-[calc(100dvh)];
+}
