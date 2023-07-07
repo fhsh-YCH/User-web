@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { datas } from "../utils.js";
+</script>
 <template>
   <!-- Desktop -->
   <div id="handlee" class="hidden md:hidden lg:block">
@@ -24,7 +26,11 @@
             >
               <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
               <ul class="list-disc pl-6 pt-4 leading-10">
-                <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
+                <a
+                  href="http://35.194.183.170/Schoolfhsh/Landing"
+                  target="_blank"
+                  ><li>新生線上訂購校服(7/14鏈結飛宇系統)</li></a
+                >
                 <a><li>新生線上訂購校服流程說明</li></a>
                 <a><li>復興高中新生校服介紹</li></a>
               </ul>
@@ -36,10 +42,10 @@
               <span class="text-[#34559D]">校務系統新生填寫資料</span>
               <ul class="list-disc pl-6 pt-4 leading-10">
                 <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
-                <a><li>校務系統新生填寫應備資料說明</li></a>
-                <a><li>校務系統高一多元選修選課說明(普體)</li></a>
                 <a><li>學生受款帳戶登記說明</li></a>
-                <a><li>教育部12年國教免學費補助查調說明</li></a>
+                <a><li>校務系統新生填寫應備資料說明</li></a>
+                <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
+                <a><li>校務系統高一多元選修選課說明(普體)</li></a>
                 <a><li>數位學生證整合服務說明</li></a>
               </ul>
             </div>
@@ -109,7 +115,12 @@
           <div class="rounded-xl border border-dashed border-black p-3">
             <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
             <ul class="list-disc pl-4 pt-2 text-sm leading-10">
-              <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
+              <a
+                href="http://35.194.183.170/Schoolfhsh/Landing"
+                target="_blank"
+                class="underline"
+                ><li>新生線上訂購校服(7/14鏈結飛宇系統)</li></a
+              >
               <a><li>新生線上訂購校服流程說明</li></a>
               <a><li>復興高中新生校服介紹</li></a>
             </ul>
@@ -119,12 +130,30 @@
           <div class="rounded-xl border border-dashed border-black p-3">
             <span class="text-[#34559D]">校務系統新生填寫資料</span>
             <ul class="list-disc pl-4 pt-2 text-sm leading-8">
-              <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
-              <a><li>學生受款帳戶登記說明</li></a>
+              <a
+                class="underline"
+                href="https://sschool.tp.edu.tw/newreg.action"
+                target="_blank"
+                ><li>新生填寫資料(7/14鏈結校務系統)</li></a
+              >
               <a><li>校務系統新生填寫應備資料說明</li></a>
-              <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
-              <a><li>校務系統高一多元選修選課說明(普體)</li></a>
               <a><li>數位學生證整合服務說明</li></a>
+              <a><li>教育部12年國教免學費補助查調說明</li></a>
+              <a><li>學雜費減免申請說明</li></a>
+              <a><li>學生受款帳戶登記說明</li></a>
+            </ul>
+          </div>
+          <br />
+          <div class="rounded-xl border border-dashed border-black p-3">
+            <span class="text-[#34559D]">校務系統多元選修選課(普體)</span>
+            <ul class="list-disc pl-4 pt-2 text-sm leading-10">
+              <a
+                href="http://35.194.183.170/Schoolfhsh/Landing"
+                target="_blank"
+                class="underline"
+                ><li>多元選修選課(7/14鏈結校務系統-新生選課)</li></a
+              >
+              <a><li>校務系統高一多元選修選課說明(普體)</li></a>
             </ul>
           </div>
         </div>
@@ -139,7 +168,9 @@
           <span class="text-md font-bold text-white"> 辦 </span>
         </div>
         <div class="rounded-r-xl bg-white p-6">
-          <div class="rounded-xl border border-dashed border-black px-12 py-5">
+          <div
+            class="rounded-xl border border-dashed border-black py-5 pl-6 pr-28"
+          >
             <span class="text-[#9D3434]">學雜費減免申請</span>
             <ul class="list-disc pl-3 pt-2 text-sm leading-8">
               <a><li>學雜費減免申請鏈結表單</li></a>
@@ -147,18 +178,32 @@
             </ul>
           </div>
           <br />
-          <div class="rounded-xl border border-dashed border-black px-12 py-5">
+          <div
+            class="rounded-xl border border-dashed border-black py-5 pl-6 pr-28"
+          >
             <span class="text-[#9D3434]">就學貸款申請</span>
             <ul class="list-disc pl-4 pt-2 text-sm leading-8">
-              <a><li>就學貸款申請鏈結表單</li></a>
+              <a
+                href="https://forms.gle/M72x1waUKi2x3yUcA"
+                target="_blank"
+                class="underline"
+                ><li>就學貸款申請鏈結表單</li></a
+              >
               <a><li>就學貸款申請說明</li></a>
             </ul>
           </div>
           <br />
-          <div class="rounded-xl border border-dashed border-black px-12 py-5">
+          <div
+            class="rounded-xl border border-dashed border-black py-5 pl-6 pr-28"
+          >
             <span class="text-[#9D3434]">學生住宿申請</span>
             <ul class="list-disc pl-4 pt-2 text-sm leading-8">
-              <a><li>學生住宿申請鏈結表單</li></a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdnNQlQUDzkNbcak0iH-lEZZmtapva5_oFg_J5gVhm7BlK9xA/viewform?vc=0&c=0&w=1&flr=0"
+                target="_blank"
+                class="underline"
+                ><li>學生住宿申請鏈結表單</li></a
+              >
               <a><li>學生住宿申請說明</li></a>
             </ul>
           </div>

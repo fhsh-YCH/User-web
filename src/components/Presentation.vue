@@ -13,13 +13,15 @@ const ppt = ref("https://www.example.com");
   </div>
   <div class="flex items-center justify-center">
     <div
-      class="rounded-lg border border-[#34559D] bg-white px-11 py-6 shadow-md md:px-16 md:py-10 lg:px-20 lg:py-10"
+      class="rounded-lg border border-[#34559D] bg-white px-10 py-6 shadow-md md:px-16 md:py-10 lg:px-20 lg:py-10"
     >
       <a :href="ppt">
-        <img
-          src="../assets/fake_pic.png"
+        <iframe
           class="w-[255px] md:w-[510px] lg:w-[750px]"
-        />
+          src="http://www.fhsh.tp.edu.tw/"
+        >
+          你的瀏覽器不支援 iframe
+        </iframe>
       </a>
     </div>
   </div>

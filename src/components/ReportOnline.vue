@@ -9,6 +9,7 @@ const drama2_hell = ref("#");
 const music_hell = ref("#");
 const art_hell = ref("#");
 const dance_hell = ref("#");
+const language = ref("#");
 
 watch(datas, (new_data, old_data) => {
   normal_hell.value = new_data.hell[0].link;
@@ -18,6 +19,7 @@ watch(datas, (new_data, old_data) => {
   music_hell.value = new_data.hell[4].link;
   art_hell.value = new_data.hell[5].link;
   dance_hell.value = new_data.hell[6].link;
+  language.value = new_data.hell[7].link;
 });
 </script>
 <template>
@@ -29,154 +31,124 @@ watch(datas, (new_data, old_data) => {
     </div>
   </div>
   <div class="flex items-center justify-center">
-    <div class="rounded-lg border border-[#34559D] bg-white p-8 shadow-md">
-      <p
-        class="text-center text-[20px] font-black text-[#34559D] md:text-3xl lg:text-3xl"
-      >
-        !!!新生請先線上報到!!!
-      </p>
-      <p class="pt-3 text-center text-[14px] md:text-lg lg:text-xl">
-        (1)查詢錄取名單(報到編號)<br />(2)線上報到、上傳畢證、本土語文選課
-      </p>
-      <p
-        class="pt-10 text-center text-[20px] font-semibold text-[#EC6261] md:text-3xl lg:text-4xl"
-      >
-        逾期未報到<br />視同放棄錄取資格
-      </p>
+    <div class="rounded-lg border border-[#34559D] bg-white p-10 shadow-md">
+      <div>
+        <span class="pt-3 text-center text-sm md:text-lg lg:text-xl">
+          7/11(二) 11:00
+        </span>
+        <span class="pt-3 text-center text-sm font-bold md:text-lg lg:text-xl">
+          查詢錄取名單及報到編號
+        </span>
+      </div>
+      <div>
+        <span class="pt-3 text-center text-sm md:text-lg lg:text-xl">
+          7/11(二) ~ 7/14(五)
+        </span>
+        <span class="pt-3 text-center text-sm font-bold md:text-lg lg:text-xl">
+          本土語文選課
+        </span>
+      </div>
+
       <div
         class="grid grid-cols-1 flex-col items-center justify-center gap-3 pt-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-5"
       >
         <!-- 普通班 -->
         <a :href="normal_hell">
-          <div class="rounded-2xl bg-[#34559D] px-8 py-6 lg:py-16">
-            <div class="flex flex-col items-center justify-center">
-              <p class="text-center text-[20px] font-semibold text-white">
-                普通班免試<br />新生線上報到
-              </p>
-              <p
-                class="pb-4 pt-2 text-center text-[16px] font-semibold text-white lg:pb-8 lg:pt-4"
-              >
-                (優免/安置上傳畢證)
-              </p>
-              <div
-                class="flex rounded-full bg-white px-8 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-              >
-                7月19日11:00<br />~7月21日11:00
-              </div>
-            </div>
+          <div
+            class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+          >
+            <span class="text-center text-2xl font-black text-white">
+              普通班免試榜單<br />及報到編號
+            </span>
+            <span class="pt-4 text-center text-white lg:pb-8 lg:pt-4">
+              *優免榜單6/19已公告<br />*安置榜單3/31已公告
+            </span>
           </div>
         </a>
         <!-- 體育班 -->
         <a :href="PE_hell">
-          <div class="rounded-2xl bg-[#34559D] px-10 py-10 md:py-6 lg:py-16">
-            <div class="flex flex-col items-center justify-center">
-              <p
-                class="pb-4 text-center text-[20px] font-semibold text-white md:py-6 lg:pb-12"
-              >
-                體育班<br />新生上傳畢冊
-              </p>
-
-              <div
-                class="flex rounded-full bg-white px-6 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-              >
-                7月19日11:00<br />~7月21日12:00
-              </div>
-            </div>
+          <div
+            class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+          >
+            <span class="text-center text-2xl font-black text-white">
+              體育班、運動<br />績優生報到編號
+            </span>
+            <span class="pt-4 text-center text-white lg:pb-8 lg:pt-4">
+              *體育班.運動績優生<br />榜單5/8已公告
+            </span>
           </div>
         </a>
         <!-- 戲劇班 -->
         <div class="flex flex-col gap-2">
           <a :href="drama1_hell"
-            ><div class="rounded-2xl bg-[#34559D] px-8 py-4">
-              <div class="flex flex-col items-center justify-center">
-                <p
-                  class="pb-4 text-center text-[20px] font-semibold text-white"
-                >
-                  戲劇班<br />正取生線上報到
-                </p>
-
-                <div
-                  class="flex rounded-full bg-white px-6 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-                >
-                  7月19日09:00<br />~7月20日12:00
-                </div>
-              </div>
+            ><div
+              class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+            >
+              <span class="text-center text-2xl font-black text-white">
+                戲劇班分班榜單<br />及報到編號
+              </span>
+              <span class="pt-4 text-center text-white lg:pb-8 lg:pt-4">
+                *備取生遞補名單預定<br />7/12-17:00公告
+              </span>
             </div></a
           >
           <a :href="drama2_hell">
-            <div class="rounded-2xl bg-[#34559D] px-8 py-4">
-              <div class="flex flex-col items-center justify-center">
-                <p
-                  class="pb-4 text-center text-[20px] font-semibold text-white"
-                >
-                  備取生線上報到
-                </p>
-
-                <div
-                  class="flex rounded-full bg-white px-6 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-                >
-                  7月20日17:00<br />~7月21日12:00
-                </div>
-              </div>
+            <div
+              class="w-70 flex h-20 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+            >
+              <span class="text-center text-2xl font-black text-white">
+                備取生遞補名單
+              </span>
             </div></a
           >
         </div>
 
         <!-- 音樂班 -->
         <a :href="music_hell">
-          <div class="rounded-2xl bg-[#34559D] px-10 py-10 md:py-20 lg:py-6">
-            <div class="flex flex-col items-center justify-center">
-              <p
-                class="pb-4 text-center text-[20px] font-semibold text-white md:pb-8 lg:py-6"
-              >
-                音樂班<br />新生線上報到
-              </p>
-
-              <div
-                class="flex rounded-full bg-white px-6 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-              >
-                7月19日11:00<br />~7月20日_12:00
-              </div>
-            </div>
+          <div
+            class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+          >
+            <span class="text-center text-2xl font-black text-white">
+              音樂班榜單<br />及報到編號
+            </span>
           </div>
         </a>
         <!-- 美術班 -->
         <a :href="art_hell">
-          <div class="rounded-2xl bg-[#34559D] px-8 py-6">
-            <div class="flex flex-col items-center justify-center">
-              <p class="text-center text-[20px] font-semibold text-white">
-                美術班<br />新生線上報到
-              </p>
-              <p
-                class="pb-4 pt-2 text-center text-[16px] font-semibold text-white"
-              >
-                （已經上傳畢證）
-              </p>
-
-              <div
-                class="flex rounded-full bg-white px-6 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-              >
-                7月19日11:00<br />~7月20日12:00
-              </div>
-            </div>
+          <div
+            class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+          >
+            <span class="text-center text-2xl font-black text-white">
+              美術班榜單<br />及報到編號
+            </span>
           </div>
         </a>
         <!-- 舞蹈班 -->
         <a :href="dance_hell">
-          <div class="rounded-2xl bg-[#34559D] px-10 py-10 lg:py-6">
-            <div class="flex flex-col items-center justify-center">
-              <p
-                class="pb-4 text-center text-[20px] font-semibold text-white md:py-6 lg:py-6"
-              >
-                舞蹈班<br />新生線上報到
-              </p>
-
-              <button
-                class="flex rounded-full bg-white px-6 py-1 text-center text-[20px] font-semibold text-[#EC6261]"
-              >
-                7月19日11:00<br />~7月20日12:00
-              </button>
-            </div>
+          <div
+            class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
+          >
+            <span class="text-center text-2xl font-black text-white">
+              舞蹈班分發榜單<br />及報到編號
+            </span>
+            <span class="pt-4 text-center text-white lg:pb-8 lg:pt-4">
+              *以競榜單4/7已公告
+            </span>
+          </div>
+        </a>
+        <!-- 本土語文選課 -->
+        <a :href="language">
+          <div
+            class="w-70 flex h-60 flex-col items-center justify-center rounded-2xl bg-[#9D3434] lg:py-16"
+          >
+            <span class="text-center text-2xl font-black text-white">
+              本土語文選課
+            </span>
+            <span
+              class="px-4 pt-6 text-center leading-7 text-white lg:pb-8 lg:pt-4"
+            >
+              全體新生鏈結【本土語文選課<br />google表單 (請用gmail帳號登<br />入，選課後收email儲存選課結<br />果，新生報到時出示選課結果)
+            </span>
           </div>
         </a>
       </div>

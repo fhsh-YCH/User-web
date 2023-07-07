@@ -1167,7 +1167,571 @@ const fourtyfour = ref("https://www.example.com");
     </div>
   </div>
 </template>
-urls.one = data.one;
-    urls.two = data.two;
-    urls.three = data.three;
-    // ...以此類推，設定其他的變數
+
+    <script setup>
+import { datas } from "../utils.js";
+</script>
+<template>
+  <!-- Desktop -->
+  <div id="handlee" class="hidden md:hidden lg:block">
+    <div class="flex justify-center pb-6 pt-10">
+      <div
+        class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md lg:text-2xl"
+      >
+        新生應辦&選辦事項
+      </div>
+    </div>
+    <div class="flex items-center justify-center">
+      <div class="grid grid-cols-2 gap-10">
+        <div class="flex">
+          <div
+            class="flex flex-col items-center justify-center gap-8 rounded-l-xl bg-[#34559D] px-5 py-10"
+          >
+            <span class="text-3xl font-bold text-white"> 應 </span>
+            <span class="text-3xl font-bold text-white"> 辦 </span>
+          </div>
+          <div class="rounded-r-xl bg-white p-6">
+            <div
+              class="rounded-xl border-2 border-dashed border-black px-8 py-4"
+            >
+              <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
+                <a><li>新生線上訂購校服流程說明</li></a>
+                <a><li>復興高中新生校服介紹</li></a>
+              </ul>
+            </div>
+            <br />
+            <div
+              class="rounded-xl border-2 border-dashed border-black px-8 py-4"
+            >
+              <span class="text-[#34559D]">校務系統新生填寫資料</span>
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
+                <a><li>校務系統新生填寫應備資料說明</li></a>
+                <a><li>校務系統高一多元選修選課說明(普體)</li></a>
+                <a><li>學生受款帳戶登記說明</li></a>
+                <a><li>教育部12年國教免學費補助查調說明</li></a>
+                <a><li>數位學生證整合服務說明</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div
+            class="flex flex-col items-center justify-center gap-8 rounded-l-xl bg-[#9D3434] px-5 py-10"
+          >
+            <span class="text-3xl font-bold text-white"> 選 </span>
+            <span class="text-3xl font-bold text-white"> 辦 </span>
+          </div>
+          <div class="rounded-r-xl bg-white py-6 pl-10 pr-14">
+            <div
+              class="rounded-xl border-2 border-dashed border-black py-4 pl-10 pr-16"
+            >
+              <span class="text-[#9D3434]">學雜費減免申請</span>
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a><li>學雜費減免申請鏈結表單</li></a>
+                <a><li>學雜費減免申請說明</li></a>
+              </ul>
+            </div>
+            <br />
+            <div
+              class="rounded-xl border-2 border-dashed border-black py-4 pl-10 pr-16"
+            >
+              <span class="text-[#9D3434]">就學貸款申請</span>
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a><li>就學貸款申請鏈結表單</li></a>
+                <a><li>就學貸款申請說明</li></a>
+              </ul>
+            </div>
+            <br />
+            <div
+              class="rounded-xl border-2 border-dashed border-black py-4 pl-10 pr-16"
+            >
+              <span class="text-[#9D3434]">學生住宿申請</span>
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a><li>學生住宿申請鏈結表單</li></a>
+                <a><li>學生住宿申請說明</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Tablet -->
+  <div id="handle" class="lg:hidden">
+    <div class="flex justify-center pb-6 pt-10">
+      <div
+        class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md lg:text-2xl"
+      >
+        新生應辦&選辦事項
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center md:flex-row md:gap-5">
+      <div class="flex">
+        <div
+          class="flex flex-col items-center justify-center gap-4 rounded-l-xl bg-[#34559D] px-2 py-5"
+        >
+          <span class="text-md font-bold text-white"> 應 </span>
+          <span class="text-md font-bold text-white"> 辦 </span>
+        </div>
+        <div class="rounded-r-xl bg-white p-5 md:py-8">
+          <div class="rounded-xl border border-dashed border-black p-3">
+            <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
+            <ul class="list-disc pl-4 pt-2 text-sm leading-10">
+              <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
+              <a><li>新生線上訂購校服流程說明</li></a>
+              <a><li>復興高中新生校服介紹</li></a>
+            </ul>
+          </div>
+          <br />
+
+          <div class="rounded-xl border border-dashed border-black p-3">
+            <span class="text-[#34559D]">校務系統新生填寫資料</span>
+            <ul class="list-disc pl-4 pt-2 text-sm leading-8">
+              <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
+              <a><li>學生受款帳戶登記說明</li></a>
+              <a><li>校務系統新生填寫應備資料說明</li></a>
+              <a><li>新生填寫資料(7/21鏈結校務系統)</li></a>
+              <a><li>校務系統高一多元選修選課說明(普體)</li></a>
+              <a><li>數位學生證整合服務說明</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="flex">
+        <div
+          class="flex flex-col items-center justify-center gap-4 rounded-l-xl bg-[#9D3434] px-2 py-5"
+        >
+          <span class="text-md font-bold text-white"> 選 </span>
+          <span class="text-md font-bold text-white"> 辦 </span>
+        </div>
+        <div class="rounded-r-xl bg-white p-6">
+          <div class="rounded-xl border border-dashed border-black px-12 py-5">
+            <span class="text-[#9D3434]">學雜費減免申請</span>
+            <ul class="list-disc pl-3 pt-2 text-sm leading-8">
+              <a><li>學雜費減免申請鏈結表單</li></a>
+              <a><li>學雜費減免申請說明</li></a>
+            </ul>
+          </div>
+          <br />
+          <div class="rounded-xl border border-dashed border-black px-12 py-5">
+            <span class="text-[#9D3434]">就學貸款申請</span>
+            <ul class="list-disc pl-4 pt-2 text-sm leading-8">
+              <a><li>就學貸款申請鏈結表單</li></a>
+              <a><li>就學貸款申請說明</li></a>
+            </ul>
+          </div>
+          <br />
+          <div class="rounded-xl border border-dashed border-black px-12 py-5">
+            <span class="text-[#9D3434]">學生住宿申請</span>
+            <ul class="list-disc pl-4 pt-2 text-sm leading-8">
+              <a><li>學生住宿申請鏈結表單</li></a>
+              <a><li>學生住宿申請說明</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<div
+              class="rounded-xl border-2 border-dashed border-black px-8 py-4"
+            >
+              <span class="text-[#34559D]">線上訂購校服(超商繳費)</span>
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a><li>新生線上訂購校服(7/21鏈結飛宇系統)</li></a>
+                <a><li>新生線上訂購校服流程說明</li></a>
+                <a><li>復興高中新生校服介紹</li></a>
+              </ul>
+            </div>
+
+
+            <button @click="toggleMenu" class="absolute right-8">
+          <img src="../assets/menu_icon.png" alt="Menu" class="h-6 w-6" />
+        </button>
+        <div v-if="isMenuOpen">
+          <div
+            class="absolute right-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-50"
+            @click="closeModel"
+          >
+            <ul class="absolute right-10 top-10">
+              <li>
+                <a
+                  id="timeline"
+                  class="rounded-full bg-white px-6 py-3 font-black text-[#34559D]"
+                  >新生入學時程表</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  :href="register"
+                  class="rounded-full bg-white px-8 py-3 font-black text-[#34559D]"
+                  >新生線上報到</a
+                >
+              </li>
+
+              <li class="pt-8">
+                <a
+                  :href="presentation"
+                  class="rounded-full bg-white px-8 py-3 font-black text-[#34559D]"
+                  >入學說明簡報</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-12 py-3 font-black text-[#34559D]"
+                  :href="homework"
+                  >暑假作業</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-6 py-3 font-black text-[#34559D]"
+                  :href="handle"
+                  >應辦＆選辦事項</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-8 py-3 font-black text-[#34559D]"
+                  :href="date"
+                  >實體到校日期</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-8 py-3 font-black text-[#34559D]"
+                  :href="otherprecautions"
+                  >其他宣導事項</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-12 py-3 font-black text-[#34559D]"
+                  :href="profile"
+                  >學校簡介</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-5 py-3 font-black text-[#34559D]"
+                  :href="linegroup"
+                  >高一LINE家長群</a
+                >
+              </li>
+              <li class="pt-8">
+                <a
+                  class="rounded-full bg-white px-8 py-3 font-black text-[#34559D]"
+                  :href="handbook"
+                  >輔導選課手冊</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <script setup>
+import DesktopNavBar from "./DesktopNav.vue";
+import { ref } from "vue";
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+const closeModel = () => {
+  isMenuOpen.value = false;
+};
+</script>
+
+<script setup>
+import { ref } from "vue";
+
+const hk1 = ref("https://www.example.com");
+const hk2 = ref("https://www.example.com");
+const hk3 = ref("https://www.example.com");
+</script>
+
+<template>
+  <div id="homework" class="flex justify-center pt-8">
+    <div
+      class="flex items-center justify-center rounded-t-lg bg-[#34559D] px-5 py-1 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
+    >
+      新生暑假作業
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div
+      class="flex flex-col gap-8 rounded-lg border border-[#34559D] bg-white px-4 py-6 shadow-md md:px-7 md:py-10 lg:px-24 lg:py-10"
+    >
+      <div class="flex items-center">
+        <a :href="hk1">
+          <button
+            role="button"
+            class="button-name px-3 py-2 text-sm md:px-12 md:py-3 md:text-2xl lg:px-14 lg:py-4 lg:text-3xl"
+          >
+            1. 新生暑假作業說明（教學組）
+          </button>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <a :href="hk2">
+          <button
+            role="button"
+            class="button-name px-3 py-2 text-sm md:px-12 md:py-3 md:text-2xl lg:px-14 lg:py-4 lg:text-3xl"
+          >
+            2. 新生數學暑假作業（請列印前8頁列印）
+          </button>
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <a :href="hk3">
+          <button
+            role="button"
+            class="button-name px-3 py-2 text-sm md:px-12 md:py-3 md:text-2xl lg:px-14 lg:py-4 lg:text-3xl"
+          >
+            3. 新生數學銜接教材（完整版51頁供參考）
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<a
+                  v-for="data in datas.clothes"
+                  :content="data.title"
+                  :href="data.link"
+                  ><li>新生線上訂購校服流程說明</li></a
+                >
+                <a
+                  v-for="data in datas.clothes"
+                  :content="data.title"
+                  :href="data.link"
+                  ><li>復興高中新生校服介紹</li></a
+                >
+
+
+                <template>
+  <div id="profile" class="flex justify-center pt-12">
+    <div
+      class="flex items-center justify-center rounded-t-lg bg-[#34559D] px-5 py-1 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
+    >
+      學校簡介
+    </div>
+  </div>
+  <div class="lg:hidden">
+    <div class="w-full border border-[#34559D] bg-white p-4 shadow-md">
+      <div class="flex overflow-x-scroll">
+        <!-- 校長室 -->
+        <div class="mr-4 flex-none p-4">
+          <div
+            class="flex border border-[#34559D] bg-white py-6 pl-4 pr-5 shadow-lg"
+          >
+            <div class="flex flex-col pr-4">
+              <span class="text-3xl font-bold text-[#34559D]">校</span>
+              <span class="text-3xl font-bold text-[#34559D]">長</span>
+              <span class="text-3xl font-bold text-[#34559D]">室</span>
+            </div>
+            <a
+              ><iframe
+                class="h-[110px] w-[155px]"
+                src="http://www.fhsh.tp.edu.tw/"
+              >
+                你的瀏覽器不支援 iframe
+              </iframe></a
+            >
+          </div>
+        </div>
+        <!-- 學務處 -->
+        <div class="mr-4 flex-none p-4">
+          <div
+            class="flex border border-[#34559D] bg-white py-6 pl-4 pr-5 shadow-lg"
+          >
+            <div class="flex flex-col pr-4">
+              <span class="text-3xl font-bold text-[#34559D]">學</span>
+              <span class="text-3xl font-bold text-[#34559D]">務</span>
+              <span class="text-3xl font-bold text-[#34559D]">處</span>
+            </div>
+            <iframe
+              class="h-[110px] w-[155px]"
+              src="http://www.fhsh.tp.edu.tw/"
+            >
+              你的瀏覽器不支援 iframe
+            </iframe>
+          </div>
+        </div>
+        <!-- 教務處 -->
+        <div class="mr-4 flex-none p-4">
+          <div
+            class="flex border border-[#34559D] bg-white py-6 pl-4 pr-5 shadow-lg"
+          >
+            <div class="flex flex-col pr-4">
+              <span class="text-3xl font-bold text-[#34559D]">教</span>
+              <span class="text-3xl font-bold text-[#34559D]">務</span>
+              <span class="text-3xl font-bold text-[#34559D]">處</span>
+            </div>
+            <iframe
+              class="h-[110px] w-[155px]"
+              src="http://www.fhsh.tp.edu.tw/"
+            >
+              你的瀏覽器不支援 iframe
+            </iframe>
+          </div>
+        </div>
+        <!-- 圖書館 -->
+        <div class="mr-4 flex-none p-4">
+          <div
+            class="flex border border-[#34559D] bg-white py-6 pl-4 pr-5 shadow-lg"
+          >
+            <div class="flex flex-col pr-4">
+              <span class="text-3xl font-bold text-[#34559D]">圖</span>
+              <span class="text-3xl font-bold text-[#34559D]">書</span>
+              <span class="text-3xl font-bold text-[#34559D]">館</span>
+            </div>
+            <iframe
+              class="h-[110px] w-[155px]"
+              src="http://www.fhsh.tp.edu.tw/"
+            >
+              你的瀏覽器不支援 iframe
+            </iframe>
+          </div>
+        </div>
+        <!-- 輔導室 -->
+        <div class="mr-4 flex-none p-4">
+          <div
+            class="flex border border-[#34559D] bg-white py-6 pl-4 pr-5 shadow-lg"
+          >
+            <div class="flex flex-col pr-4">
+              <span class="text-3xl font-bold text-[#34559D]">輔</span>
+              <span class="text-3xl font-bold text-[#34559D]">導</span>
+              <span class="text-3xl font-bold text-[#34559D]">室</span>
+            </div>
+            <iframe
+              class="h-[110px] w-[155px]"
+              src="http://www.fhsh.tp.edu.tw/"
+            >
+              你的瀏覽器不支援 iframe
+            </iframe>
+          </div>
+        </div>
+        <!-- 總務處 -->
+        <div class="mr-4 flex-none p-4">
+          <div
+            class="flex border border-[#34559D] bg-white py-6 pl-4 pr-5 shadow-lg"
+          >
+            <div class="flex flex-col pr-4">
+              <span class="text-3xl font-bold text-[#34559D]">總</span>
+              <span class="text-3xl font-bold text-[#34559D]">務</span>
+              <span class="text-3xl font-bold text-[#34559D]">處</span>
+            </div>
+            <iframe
+              class="h-[110px] w-[155px]"
+              src="http://www.fhsh.tp.edu.tw/"
+            >
+              你的瀏覽器不支援 iframe
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden md:hidden lg:flex lg:items-center lg:justify-center">
+    <div
+      class="flex w-[90vw] items-center justify-center rounded-xl border-2 border-[#34559D] bg-white p-4 shadow-md"
+    >
+      <div class="flex flex-col">
+        <div class="flex">
+          <!-- 校長室 -->
+          <div class="mr-4 flex-none p-4">
+            <div
+              class="flex border-2 border-[#34559D] bg-white py-9 pl-7 pr-8 shadow-lg"
+            >
+              <div class="flex flex-col pr-4">
+                <span class="text-4xl font-bold text-[#34559D]">校</span>
+                <span class="text-4xl font-bold text-[#34559D]">長</span>
+                <span class="text-4xl font-bold text-[#34559D]">室</span>
+              </div>
+              <img src="../assets/fake_pic.png" class="w-[190px]" />
+            </div>
+          </div>
+          <!-- 學務處 -->
+          <div class="mr-4 flex-none p-4">
+            <div
+              class="flex border-2 border-[#34559D] bg-white py-9 pl-7 pr-8 shadow-lg"
+            >
+              <div class="flex flex-col pr-4">
+                <span class="text-4xl font-bold text-[#34559D]">學</span>
+                <span class="text-4xl font-bold text-[#34559D]">務</span>
+                <span class="text-4xl font-bold text-[#34559D]">處</span>
+              </div>
+              <img src="../assets/fake_pic.png" class="w-[190px]" />
+            </div>
+          </div>
+          <!-- 教務處 -->
+          <div class="mr-4 flex-none p-4">
+            <div
+              class="flex border-2 border-[#34559D] bg-white py-9 pl-7 pr-8 shadow-lg"
+            >
+              <div class="flex flex-col pr-4">
+                <span class="text-4xl font-bold text-[#34559D]">教</span>
+                <span class="text-4xl font-bold text-[#34559D]">務</span>
+                <span class="text-4xl font-bold text-[#34559D]">處</span>
+              </div>
+              <img src="../assets/fake_pic.png" class="w-[190px]" />
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <!-- 圖書館 -->
+          <div class="mr-4 flex-none p-4">
+            <div
+              class="flex border-2 border-[#34559D] bg-white py-9 pl-7 pr-8 shadow-lg"
+            >
+              <div class="flex flex-col pr-4">
+                <span class="text-4xl font-bold text-[#34559D]">圖</span>
+                <span class="text-4xl font-bold text-[#34559D]">書</span>
+                <span class="text-4xl font-bold text-[#34559D]">館</span>
+              </div>
+              <img src="../assets/fake_pic.png" class="w-[190px]" />
+            </div>
+          </div>
+          <!-- 輔導室 -->
+          <div class="mr-4 flex-none p-4">
+            <div
+              class="flex border-2 border-[#34559D] bg-white py-9 pl-7 pr-8 shadow-lg"
+            >
+              <div class="flex flex-col pr-4">
+                <span class="text-4xl font-bold text-[#34559D]">輔</span>
+                <span class="text-4xl font-bold text-[#34559D]">導</span>
+                <span class="text-4xl font-bold text-[#34559D]">室</span>
+              </div>
+              <img src="../assets/fake_pic.png" class="w-[190px]" />
+            </div>
+          </div>
+          <!-- 總務處 -->
+          <div class="mr-4 flex-none p-4">
+            <div
+              class="flex border-2 border-[#34559D] bg-white py-9 pl-7 pr-8 shadow-lg"
+            >
+              <div class="flex flex-col pr-4">
+                <span class="text-4xl font-bold text-[#34559D]">總</span>
+                <span class="text-4xl font-bold text-[#34559D]">務</span>
+                <span class="text-4xl font-bold text-[#34559D]">處</span>
+              </div>
+              <img src="../assets/fake_pic.png" class="w-[190px]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

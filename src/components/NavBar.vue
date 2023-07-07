@@ -7,10 +7,19 @@ const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
 const closeModel = () => {
   isMenuOpen.value = false;
 };
+
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
+
 <template>
   <div class="overflow-x-hidden">
     <div class="relative w-screen overflow-x-hidden bg-[#FAF7EF]">
@@ -38,8 +47,9 @@ const closeModel = () => {
             <ul class="absolute right-10 top-10">
               <li>
                 <a
-                  :href="timetable"
+                  id="timeline"
                   class="rounded-full bg-white px-6 py-3 font-black text-[#34559D]"
+                  @click="scrollToSection('timeline')"
                   >新生入學時程表</a
                 >
               </li>

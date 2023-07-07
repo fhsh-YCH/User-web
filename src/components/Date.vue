@@ -1,5 +1,6 @@
 <script setup>
 import DateAnnounce from "../componentss/DateAnnounce.vue";
+import { datas } from "../utils.js";
 
 const temp_datas = [
   {
@@ -75,18 +76,18 @@ const temp_datas = [
     <span
       class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >
-      新生實體到校日期
+      新生到校日期
     </span>
   </div>
   <div
     class="grid grid-cols-1 gap-x-14 gap-y-3 px-8 sm:grid-cols-2 lg:px-24 xl:grid-cols-3"
   >
     <DateAnnounce
-      v-for="(data, index) in temp_datas"
+      v-for="(data, index) in datas.time_line"
       :date="data.date"
-      :href="data.href"
-      :content_line1="data.content.slice(0, data.splitNumber)"
-      :content_line2="data.content.slice(data.splitNumber)"
+      :href="data.link"
+      :content_line1="data.title.slice(0, data.splitNumber)"
+      :content_line2="data.title.slice(data.splitNumber)"
       :class="{
         'justify-self-end ': index % 2 === 0,
       }"
