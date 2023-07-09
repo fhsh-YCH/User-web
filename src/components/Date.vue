@@ -76,7 +76,7 @@ const temp_datas = [
     <span
       class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >
-      新生到校日期
+      新生始業輔導
     </span>
   </div>
   <div

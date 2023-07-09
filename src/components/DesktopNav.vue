@@ -1,22 +1,22 @@
 <template>
   <nav
-    class="bg-[#34559D] px-1 py-6 w-full items-center justify-center fixed top-0 left-0 right-0 z-50 shadow-md hidden md:hidden lg:block"
+    class="fixed left-0 right-0 top-0 z-50 hidden w-full items-center justify-center bg-[#34559D] px-1 py-6 shadow-md md:hidden lg:block"
   >
-    <div class="flex justify-center items-center">
+    <div class="flex items-center justify-center">
       <div
         v-for="(item, index) in navItems"
         :key="index"
-        class="px-4 text-white"
+        class="px-3 text-white"
       >
         <a
           @click="handleItemClick(index)"
           :href="`#${item.target}`"
-          class="flex flex-col justify-center items-center pl-4 scroll"
+          class="scroll flex flex-col items-center justify-center pl-4"
         >
           <p class="font-bold">{{ item.label }}</p>
           <div
             :class="{
-              'bg-[#EBE7DB] py-1 px-16 fixed top-16 rounded-full':
+              'fixed top-16 rounded-full bg-[#EBE7DB] px-16 py-1':
                 currentIndex === index,
             }"
           ></div>
@@ -31,13 +31,12 @@ import { ref } from "vue";
 
 const navItems = [
   { label: "新生入學時程表", target: "timeline" },
-  { label: "新生線上報到", target: "register" },
-  { label: "入學說明簡報", target: "presentation" },
+  { label: "公告榜單及報到編號", target: "register" },
+  { label: "新生實體報到", target: "report" },
   { label: "暑假作業", target: "homework" },
   { label: "應辦＆選辦事項", target: "handlee" },
-  { label: "實體到校日期", target: "date" },
-  { label: "其他宣導事項", target: "otherprecautions" },
-  { label: "學校簡介", target: "profile" },
+  { label: "新生始業輔導", target: "date" },
+  { label: "其他注意事項", target: "otherprecautions" },
   { label: "高一LINE家長群", target: "linegroup" },
   { label: "輔導選課手冊", target: "handbook" },
 ];

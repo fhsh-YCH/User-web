@@ -1,9 +1,8 @@
 <script setup>
-import { ref } from "vue";
-const ppt = ref("https://www.example.com");
+import { datas } from "../utils.js";
 </script>
 <template>
-  <div id="presentation" class="pt-8"></div>
+  <!-- <div id="presentation" class="pt-8"></div>
   <div class="flex justify-center">
     <div
       class="flex items-center justify-center rounded-t-lg bg-[#34559D] px-5 py-1 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
@@ -24,5 +23,5 @@ const ppt = ref("https://www.example.com");
         </iframe>
       </a>
     </div>
-  </div>
+  </div> -->
 </template>

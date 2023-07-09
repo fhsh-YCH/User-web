@@ -33,9 +33,9 @@ import { datas } from "../utils.js";
 import { datas } from "../utils.js";
 </script>
 <template>
-  <div class="flex items-center justify-center p-6">
+  <div id="help" class="flex items-center justify-center p-6">
     <div class="card">
-      <div class="header">新生始業輔導</div>
+      <div class="header lg:text-2xl">新生始業輔導</div>
       <div class="body">
         <ul
           class="skill pl-6"

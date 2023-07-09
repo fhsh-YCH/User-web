@@ -1,5 +1,6 @@
 <script setup>
 import DesktopNavBar from "./DesktopNav.vue";
+import Nav from "../componentss/Nav.vue";
 import { ref } from "vue";
 
 const isMenuOpen = ref(false);
@@ -10,13 +11,6 @@ const toggleMenu = () => {
 
 const closeModel = () => {
   isMenuOpen.value = false;
-};
-
-const scrollToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
 };
 </script>
 
@@ -44,7 +38,7 @@ const scrollToSection = (sectionId) => {
             class="absolute right-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-50"
             @click="closeModel"
           >
-            <ul class="absolute right-10 top-10">
+            <!-- <ul class="absolute right-10 top-10">
               <li>
                 <a
                   id="timeline"
@@ -117,7 +111,8 @@ const scrollToSection = (sectionId) => {
                   >輔導選課手冊</a
                 >
               </li>
-            </ul>
+            </ul> -->
+            <Nav />
           </div>
         </div>
       </nav>

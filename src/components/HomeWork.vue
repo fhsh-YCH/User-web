@@ -13,10 +13,10 @@ import hw from "../componentss/hw.vue";
   </div>
   <div class="flex justify-center">
     <div
-      class="flex flex-col gap-8 rounded-lg border border-[#34559D] bg-white px-4 py-6 shadow-md md:px-7 md:py-10 lg:px-24 lg:py-10"
+      class="flex flex-col gap-8 rounded-lg border border-[#34559D] bg-white px-12 py-6 shadow-md md:px-20 md:py-10 lg:px-24 lg:py-10"
     >
       <hw
-        v-for="(data, index) in datas.homework"
+        v-for="data in datas.homework"
         :href="data.link"
         :content="data.title"
       />

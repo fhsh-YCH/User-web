@@ -62,7 +62,7 @@
         >
           <div class="flex border border-[#34559D] bg-white p-4 shadow-lg">
             <iframe
-              class="h-[120px] w-[165px]"
+              class="allow-popups h-[120px] w-[165px]"
               src="http://www.fhsh.tp.edu.tw/"
             >
               你的瀏覽器不支援 iframe

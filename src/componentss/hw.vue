@@ -3,10 +3,10 @@ defineProps(["content", "href"]);
 </script>
 
 <template>
-  <a>
+  <a class="flex items-center justify-center">
     <button
       role="button"
-      class="button-name px-3 py-2 text-sm md:px-12 md:py-3 md:text-2xl lg:px-14 lg:py-4 lg:text-3xl"
+      class="button-name px-8 py-4 text-sm md:px-16 md:py-5 md:text-xl lg:px-14 lg:py-4 lg:text-3xl"
     >
       {{ content }}
     </button>
