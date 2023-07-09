@@ -14,6 +14,7 @@ import Foooter from "./components/Footer.vue";
 import Report from "./components/Report.vue";
 //import PPT from "./components/Presentation.vue";
 import { req, data_arrive_model_control } from "./utils.js";
+import AD from "./components/AD.vue";
 
 req();
 </script>
@@ -66,6 +67,8 @@ req();
     </div>
     <!-- Footer -->
     <Foooter />
+    <!-- AD -->
+    <AD />
   </div>
 </template>
 
