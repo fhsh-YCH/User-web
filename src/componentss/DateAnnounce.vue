@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["date", "content_line1", "content_line2", "href"]);
+defineProps(["date", "title", "href"]);
 </script>
 <template>
   <div class="w-full lg:hidden">
@@ -14,7 +14,7 @@ defineProps(["date", "content_line1", "content_line2", "href"]);
           {{ date }}<br />公告
         </div>
         <span class="w-full py-0 pl-1 pr-2 text-center text-lg font-bold">
-          {{ content_line1 }}<br />{{ content_line2 }}</span
+          {{ title }}</span
         >
       </a>
     </div>
@@ -32,7 +32,7 @@ defineProps(["date", "content_line1", "content_line2", "href"]);
           {{ date }}<br />公告
         </div>
         <span class="w-full pl-10 pr-12 text-center text-2xl font-bold">
-          {{ content_line1 }}<br />{{ content_line2 }}</span
+          {{ title }}</span
         >
       </a>
     </div>

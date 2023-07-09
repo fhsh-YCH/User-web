@@ -10,7 +10,7 @@ import { datas } from "../utils.js";
       :href="data.link"
     >
       <button
-        class="flex items-center justify-center rounded-xl bg-[#EC6261] px-16 py-3 text-center text-xl font-semibold text-white shadow-md md:px-16 md:py-4 md:text-2xl lg:px-32 lg:py-6 lg:text-3xl"
+        class="flex items-center justify-center rounded-xl bg-[#EC6261] px-16 py-3 text-center text-xl font-semibold text-white shadow-md md:px-16 md:py-4 md:text-2xl lg:px-28 lg:py-6 lg:text-3xl"
       >
         {{ data.title }}
       </button>

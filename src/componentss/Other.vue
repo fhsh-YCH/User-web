@@ -1,17 +1,15 @@
 <script setup>
-defineProps(["content_line1", "content_line2", "href"]);
+defineProps(["title", "href"]);
 </script>
 <template>
   <div class="hidden md:block lg:block">
     <div class="flex w-full max-w-sm justify-center pt-4">
       <a
         :href="href"
-        class="flex w-full items-center rounded-xl border-8 border-[#34559D] bg-white py-7"
+        class="flex w-full items-center rounded-xl border-8 border-[#34559D] bg-white py-14"
       >
-        <span
-          class="w-full pl-10 pr-12 text-center text-2xl font-bold leading-9 md:pl-6 md:pr-6"
-        >
-          {{ content_line1 }}<br />{{ content_line2 }}</span
+        <span class="w-full text-center text-2xl font-bold leading-9 md:px-6">
+          {{ title }}</span
         >
       </a>
     </div>
@@ -20,10 +18,10 @@ defineProps(["content_line1", "content_line2", "href"]);
     <div class="flex w-full max-w-sm justify-center pt-4">
       <a
         :href="href"
-        class="flex w-full items-center rounded-xl border-4 border-[#34559D] bg-white px-4 py-10"
+        class="flex w-full items-center rounded-xl border-4 border-[#34559D] bg-white px-2 py-16"
       >
         <span class="w-full pl-3 pr-3 text-center text-2xl font-bold leading-9">
-          {{ content_line1 }}<br />{{ content_line2 }}</span
+          {{ title }}</span
         >
       </a>
     </div>

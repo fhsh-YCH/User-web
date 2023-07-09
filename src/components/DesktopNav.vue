@@ -6,7 +6,7 @@
       <div
         v-for="(item, index) in navItems"
         :key="index"
-        class="px-3 text-white"
+        class="text-white lg:px-1 lg:text-sm xl:px-3 xl:text-base"
       >
         <a
           @click="handleItemClick(index)"
@@ -16,7 +16,7 @@
           <p class="font-bold">{{ item.label }}</p>
           <div
             :class="{
-              'fixed top-16 rounded-full bg-[#EBE7DB] px-16 py-1':
+              'fixed rounded-full bg-[#EBE7DB] px-16 py-1 lg:top-14 xl:top-16':
                 currentIndex === index,
             }"
           ></div>

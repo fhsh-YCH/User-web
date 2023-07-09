@@ -84,10 +84,9 @@ const temp_datas = [
   >
     <DateAnnounce
       v-for="(data, index) in datas.time_line"
-      :date="data.date"
       :href="data.link"
-      :content_line1="data.title.slice(0, data.splitNumber)"
-      :content_line2="data.title.slice(data.splitNumber)"
+      :date="data.date"
+      :title="data.title"
       :class="{
         'justify-self-end ': index % 2 === 0,
       }"

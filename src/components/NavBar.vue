@@ -19,12 +19,12 @@ const closeModel = () => {
     <div class="relative w-screen overflow-x-hidden bg-[#FAF7EF]">
       <!-- nav bar -->
       <nav
-        class="fixed inset-x-0 left-0 right-0 top-0 z-50 flex w-full items-center justify-center rounded-b-xl bg-[#FAF7EF] p-4 drop-shadow-md lg:hidden"
+        class="fixed inset-x-0 left-0 right-0 top-0 z-30 flex w-full items-center justify-center rounded-b-xl bg-[#FAF7EF] p-4 drop-shadow-md lg:hidden"
       >
         <a
           href="http://www.fhsh.tp.edu.tw/"
           target="_blank"
-          class="absolute left-8"
+          class="relative left-8"
         >
           <img src="../assets/FHSH-logo.png" class="h-6 w-8" />
         </a>

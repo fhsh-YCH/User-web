@@ -112,8 +112,7 @@ const temp_datas = [
         <Other
           v-for="(data, index) in datas.notice"
           :href="data.link"
-          :content_line1="data.title.slice(0, data.splitNumber)"
-          :content_line2="data.title.slice(data.splitNumber)"
+          :title="data.title"
           :class="{
             'justify-self-end ': index % 2 === 0,
           }"
