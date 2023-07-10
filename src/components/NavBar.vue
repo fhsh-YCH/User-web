@@ -24,7 +24,7 @@ const closeModel = () => {
         <a
           href="http://www.fhsh.tp.edu.tw/"
           target="_blank"
-          class="relative left-8"
+          class="absolute left-8 md:left-8 lg:left-8"
         >
           <img src="../assets/FHSH-logo.png" class="h-6 w-8" />
         </a>

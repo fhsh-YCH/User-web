@@ -1,5 +1,5 @@
 <script setup>
-import { datas } from "../utils.js";
+//import { datas } from "../utils.js";
 </script>
 <template>
   <!-- <div id="presentation" class="pt-8"></div>
