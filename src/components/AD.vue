@@ -4,38 +4,47 @@
       class="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-black/70 p-4"
     >
       <div
-        class="mb-28 flex flex-col items-center justify-center gap-8 overflow-auto rounded-lg border-4 border-[#FAF7EF] bg-[#FAF7EF] p-0 sm:left-5 sm:top-5 md:left-0 md:top-0 md:mb-16 md:max-w-xl lg:mb-0 lg:border-[#34559D] lg:px-6 lg:py-5"
+        class="mb-20 flex flex-col items-center justify-center gap-2 lg:flex-none"
       >
-        <div class="relative">
-          <!-- 使用 v-for 生成幻燈片 -->
-          <div
-            v-for="(slide, index) in slides.data"
-            :key="index"
-            :class="{ slide: true, hidden: index !== slideIndex - 1 }"
-          >
-            <a :href="slide.href">
-              <img
-                :src="slide.img_src"
-                class="lg:-webkit-500 w-full lg:h-[500px]"
-              />
-            </a>
+        <div
+          class="mb-4 flex flex-col items-center justify-center gap-8 overflow-auto rounded-lg border-4 border-[#FAF7EF] bg-[#FAF7EF] md:mb-6 md:max-w-xl lg:mb-0 lg:border-[#34559D] lg:px-6 lg:py-5"
+        >
+          <div class="relative">
+            <!-- 使用 v-for 生成幻燈片 -->
+            <div
+              v-for="(slide, index) in slides.data"
+              :key="index"
+              :class="{ slide: true, hidden: index !== slideIndex - 1 }"
+            >
+              <a :href="slide.href">
+                <img
+                  :src="slide.img_src"
+                  class="lg:-webkit-500 w-full lg:h-[500px]"
+                />
+              </a>
+            </div>
+
+            <!-- The previous button -->
+            <!-- The next button -->
+            <a
+              class="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer bg-black/30 p-4 text-white hover:bg-black/50 hover:text-amber-500"
+              @click="handleNextClick"
+              >❯</a
+            >
           </div>
-
-          <!-- The previous button -->
-          <a
-            class="absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer bg-black/30 p-4 text-white hover:bg-black/50 hover:text-amber-500"
-            @click="() => moveSlide(-1)"
-            >❮</a
+          <div
+            class="hidden md:hidden lg:flex lg:items-center lg:justify-center"
           >
-
-          <!-- The next button -->
-          <a
-            class="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer bg-black/30 p-4 text-white hover:bg-black/50 hover:text-amber-500"
-            @click="handleNextClick"
-            >❯</a
-          >
+            <button
+              v-if="closeCounter.value >= 1"
+              @click="closeModel"
+              class="rounded-md bg-[#34559D] px-4 py-2 text-center text-white md:px-6 md:py-3 lg:text-lg"
+            >
+              關閉
+            </button>
+          </div>
         </div>
-        <div class="hidden md:hidden lg:flex lg:items-center lg:justify-center">
+        <div class="lg:hidden">
           <button
             v-if="closeCounter.value >= 1"
             @click="closeModel"
@@ -111,3 +120,17 @@ function handleNextClick() {
   }
 }
 </script>
+
+<!-- <a<div class="hidden md:hidden lg:flex lg:items-center lg:justify-center">
+          <button
+            v-if="closeCounter.value >= 1"
+            @click="closeModel"
+            class="rounded-md bg-[#34559D] px-4 py-2 text-center text-white md:px-6 md:py-3 lg:text-lg"
+          >
+            關閉
+          </button>
+        </div>
+            class="absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer bg-black/30 p-4 text-white hover:bg-black/50 hover:text-amber-500"
+            @click="() => moveSlide(-1)"
+            >❮</a
+          > -->
