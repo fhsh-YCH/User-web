@@ -30,7 +30,7 @@ const closeModel = () => {
         <a
           href="https://forms.gle/MqyJwotKKT6qthH36"
           class="rounded-md bg-[#34559D] px-3 py-2 text-center text-white md:px-6 md:py-3 lg:text-lg"
-          >查看更多相關內容</a
+          >查看更多營隊內容</a
         >
       </div>
     </div>
