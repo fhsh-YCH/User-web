@@ -28,14 +28,13 @@ import { datas } from "../utils.js";
               <span class="font-bold text-[#34559D]"
                 >線上訂購校服(超商繳費)</span
               >
-              <ul
-                v-for="data in datas.clothes"
-                :title="data.title"
-                :key="data.title"
-                :href="data.link"
-                class="list-disc pl-6 pt-4 leading-10"
-              >
-                <a :href="href" target="_blank"
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a
+                  target="_blank"
+                  v-for="data in datas.clothes"
+                  :title="data.title"
+                  :key="data.title"
+                  :href="data.link"
                   ><li class="underline">
                     {{ data.title }}
                   </li></a
@@ -48,14 +47,14 @@ import { datas } from "../utils.js";
               class="rounded-xl border-2 border-dashed border-black px-8 py-4"
             >
               <span class="font-bold text-[#34559D]">校務系統新生填寫資料</span>
-              <ul
-                v-for="data in datas.write"
-                :title="data.title"
-                :key="data.title"
-                :href="data.link"
-                class="list-disc pl-6 pt-4 leading-10"
-              >
-                <a class="underline" :href="href" target="_blank"
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a
+                  v-for="data in datas.write"
+                  :title="data.title"
+                  :key="data.title"
+                  :href="data.link"
+                  class="underline"
+                  target="_blank"
                   ><li>{{ data.title }}</li></a
                 >
               </ul>
@@ -67,14 +66,14 @@ import { datas } from "../utils.js";
               <span class="font-bold text-[#34559D]"
                 >校務系統多元選修選課(普體)</span
               >
-              <ul
-                v-for="data in datas.course"
-                :title="data.title"
-                :key="data.title"
-                :href="data.link"
-                class="list-disc pl-6 pt-4 leading-10"
-              >
-                <a :href="href" target="_blank" class="underline"
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a
+                  v-for="data in datas.course"
+                  :title="data.title"
+                  :key="data.title"
+                  :href="data.link"
+                  target="_blank"
+                  class="underline"
                   ><li>{{ data.title }}</li></a
                 >
               </ul>
@@ -96,14 +95,14 @@ import { datas } from "../utils.js";
               class="rounded-xl border-2 border-dashed border-black py-8 pl-10 pr-12"
             >
               <span class="font-bold text-[#9D3434]">語文競賽增額報名</span>
-              <ul
-                v-for="data in datas.contest"
-                :title="data.title"
-                :key="data.title"
-                :href="data.link"
-                class="list-disc pl-6 pt-4 leading-10"
-              >
-                <a :href="href" target="_blank" class="underline"
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a
+                  v-for="data in datas.contest"
+                  :title="data.title"
+                  :key="data.title"
+                  :href="data.link"
+                  target="_blank"
+                  class="underline"
                   ><li>{{ data.title }}</li></a
                 >
               </ul>
@@ -113,14 +112,14 @@ import { datas } from "../utils.js";
               class="rounded-xl border-2 border-dashed border-black py-8 pl-10 pr-20"
             >
               <span class="font-bold text-[#9D3434]">就學貸款申請</span>
-              <ul
-                v-for="data in datas.money"
-                :title="data.title"
-                :key="data.title"
-                :href="data.link"
-                class="list-disc pl-6 pt-4 leading-10"
-              >
-                <a :href="href" target="_blank" class="underline"
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a
+                  v-for="data in datas.money"
+                  :title="data.title"
+                  :key="data.title"
+                  :href="data.link"
+                  target="_blank"
+                  class="underline"
                   ><li>{{ data.title }}</li></a
                 >
               </ul>
@@ -131,14 +130,14 @@ import { datas } from "../utils.js";
               class="rounded-xl border-2 border-dashed border-black py-8 pl-10 pr-20"
             >
               <span class="font-bold text-[#9D3434]">學生住宿申請</span>
-              <ul
-                v-for="data in datas.live"
-                :title="data.title"
-                :key="data.title"
-                :href="data.link"
-                class="list-disc pl-6 pt-4 leading-10"
-              >
-                <a :href="href" target="_blank" class="underline"
+              <ul class="list-disc pl-6 pt-4 leading-10">
+                <a
+                  v-for="data in datas.live"
+                  :title="data.title"
+                  :key="data.title"
+                  :href="data.link"
+                  target="_blank"
+                  class="underline"
                   ><li>{{ data.title }}</li></a
                 >
               </ul>
@@ -169,14 +168,14 @@ import { datas } from "../utils.js";
           <div class="hidden p-1 md:block lg:hidden"></div>
           <div class="rounded-xl border border-dashed border-black p-3">
             <span class="font-bold text-[#34559D]">線上訂購校服(超商繳費)</span>
-            <ul
-              v-for="data in datas.clothes"
-              :title="data.title"
-              :key="data.title"
-              :href="data.link"
-              class="list-disc pl-4 pt-2 text-sm leading-10"
-            >
-              <a :href="href" target="_blank" class="underline"
+            <ul class="list-disc pl-4 pt-2 text-sm leading-10">
+              <a
+                v-for="data in datas.clothes"
+                :title="data.title"
+                :key="data.title"
+                :href="data.link"
+                target="_blank"
+                class="underline"
                 ><li>{{ data.title }}</li></a
               >
             </ul>
@@ -185,14 +184,14 @@ import { datas } from "../utils.js";
 
           <div class="rounded-xl border border-dashed border-black p-3">
             <span class="font-bold text-[#34559D]">校務系統新生填寫資料</span>
-            <ul
-              v-for="data in datas.write"
-              :title="data.title"
-              :key="data.title"
-              :href="data.link"
-              class="list-disc pl-4 pt-2 text-sm leading-8"
-            >
-              <a class="underline" :href="href" target="_blank"
+            <ul class="list-disc pl-4 pt-2 text-sm leading-8">
+              <a
+                class="underline"
+                v-for="data in datas.write"
+                :title="data.title"
+                :key="data.title"
+                :href="data.link"
+                target="_blank"
                 ><li>{{ data.title }}</li></a
               >
             </ul>
@@ -202,14 +201,14 @@ import { datas } from "../utils.js";
             <span class="font-bold text-[#34559D]"
               >校務系統多元選修選課(普體)</span
             >
-            <ul
-              v-for="data in datas.course"
-              :title="data.title"
-              :key="data.title"
-              :href="data.link"
-              class="list-disc pl-4 pt-2 text-sm leading-10"
-            >
-              <a :href="href" target="_blank" class="underline"
+            <ul class="list-disc pl-4 pt-2 text-sm leading-10">
+              <a
+                v-for="data in datas.course"
+                :title="data.title"
+                :key="data.title"
+                :href="data.link"
+                target="_blank"
+                class="underline"
                 ><li>{{ data.title }}</li></a
               >
             </ul>
@@ -230,14 +229,14 @@ import { datas } from "../utils.js";
             class="rounded-xl border border-dashed border-black py-8 pl-6 pr-24"
           >
             <span class="font-bold text-[#9D3434]">語文競賽增額報名</span>
-            <ul
-              v-for="data in datas.contest"
-              :title="data.title"
-              :key="data.title"
-              :href="data.link"
-              class="list-disc pl-3 pt-2 text-sm leading-8"
-            >
-              <a :href="href" target="_blank" class="underline"
+            <ul class="list-disc pl-3 pt-2 text-sm leading-8">
+              <a
+                v-for="data in datas.contest"
+                :title="data.title"
+                :key="data.title"
+                :href="data.link"
+                target="_blank"
+                class="underline"
                 ><li>{{ data.title }}</li></a
               >
             </ul>
@@ -247,21 +246,15 @@ import { datas } from "../utils.js";
             class="rounded-xl border border-dashed border-black py-8 pl-6 pr-24"
           >
             <span class="font-bold text-[#9D3434]">就學貸款申請</span>
-            <ul
-              v-for="data in datas.money"
-              :title="data.title"
-              :key="data.title"
-              :href="data.link"
-              class="list-disc pl-4 pt-2 text-sm leading-8"
-            >
-              <a :href="href" target="_blank" class="underline"
-                ><li>{{ data.title }}</li></a
-              >
+            <ul class="list-disc pl-4 pt-2 text-sm leading-8">
               <a
-                href="https://drive.google.com/file/d/1_CHoivZu3_4fcxoarj5DMR8hvTad2uzB/view?usp=sharing"
+                v-for="data in datas.money"
+                :title="data.title"
+                :key="data.title"
+                :href="data.link"
                 target="_blank"
                 class="underline"
-                ><li>就學貸款申請說明</li></a
+                ><li>{{ data.title }}</li></a
               >
             </ul>
           </div>
@@ -270,14 +263,14 @@ import { datas } from "../utils.js";
             class="rounded-xl border border-dashed border-black py-8 pl-6 pr-24"
           >
             <span class="font-bold text-[#9D3434]">學生住宿申請</span>
-            <ul
-              v-for="data in datas.live"
-              :title="data.title"
-              :key="data.title"
-              :href="data.link"
-              class="list-disc pl-4 pt-2 text-sm leading-8"
-            >
-              <a :href="href" target="_blank" class="underline"
+            <ul class="list-disc pl-4 pt-2 text-sm leading-8">
+              <a
+                v-for="data in datas.live"
+                :title="data.title"
+                :key="data.title"
+                :href="data.link"
+                target="_blank"
+                class="underline"
                 ><li>{{ data.title }}</li></a
               >
             </ul>
