@@ -27,7 +27,7 @@
             <!-- The previous button -->
             <!-- The next button -->
             <a
-              class="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer bg-black/30 p-4 text-white hover:bg-black/50 hover:text-amber-500"
+              class="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-[#9D3434] px-5 py-2 text-center text-2xl font-black text-white lg:-right-5"
               @click="handleNextClick"
               >❯</a
             >

@@ -19,7 +19,7 @@ watch(datas, (new_data, old_data) => {
   music_hell.value = new_data.hell[4].link;
   art_hell.value = new_data.hell[5].link;
   dance_hell.value = new_data.hell[6].link;
-  language_hell.value = new_data.hell[6].link;
+  language_hell.value = new_data.hell[7].link;
 });
 </script>
 <template>
