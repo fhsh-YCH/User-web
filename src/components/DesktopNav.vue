@@ -31,6 +31,7 @@ import { ref } from "vue";
 
 const navItems = [
   { label: "新生入學時程表", target: "timeline" },
+  { label: "新生行事曆暨檢核表", target: "calendar" },
   { label: "公告榜單及報到編號", target: "register" },
   { label: "新生實體報到", target: "report" },
   { label: "暑假作業", target: "homework" },

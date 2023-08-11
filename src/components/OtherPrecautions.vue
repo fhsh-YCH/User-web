@@ -1,3 +1,4 @@
+npm
 <script setup>
 import Other from "../componentss/Other.vue";
 import { datas } from "../utils.js";
