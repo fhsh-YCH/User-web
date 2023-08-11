@@ -2,7 +2,7 @@
 import NavBar from "./components/NavBar.vue";
 import TimeTable from "./components/TimeTable.vue";
 import ReportOnline from "./components/ReportOnline.vue";
-import Handbook from "./components/CourseHandbook.vue";
+//import Handbook from "./components/CourseHandbook.vue";
 //import Help from "./components/Help.vue";
 import HomeWork from "./components/HomeWork.vue";
 import Handle from "./components/Handle.vue";
@@ -14,7 +14,8 @@ import Foooter from "./components/Footer.vue";
 import Report from "./components/Report.vue";
 //import PPT from "./components/Presentation.vue";
 import { req, data_arrive_model_control } from "./utils.js";
-import AD from "./components/AD.vue";
+//import AD from "./components/AD.vue";
+import Calendar from "./components/Calendar.vue";
 
 req();
 </script>
@@ -38,6 +39,8 @@ req();
     <NavBar />
     <!-- 新生入學時程表 -->
     <TimeTable />
+    <!-- 新生行事曆暨檢核表 -->
+    <Calendar />
     <!-- 公告榜單及報到編號-->
     <ReportOnline />
     <!-- 新生實體報到 -->
@@ -61,14 +64,14 @@ req();
       <!-- 高一line家長群 -->
       <Line />
       <!-- 選課輔導手冊 -->
-      <Handbook />
+      <!-- <Handbook />  -->
       <!-- 入學說明簡報 -->
       <!-- <PPT /> -->
     </div>
     <!-- Footer -->
     <Foooter />
     <!-- AD -->
-    <AD />
+    <!-- <AD /> -->
   </div>
 </template>
 
