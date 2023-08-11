@@ -4,8 +4,8 @@ import { datas } from "../utils.js";
 
 const normal_hell = ref("#");
 const PE_hell = ref("#");
-const drama1_hell = ref("#");
-const drama2_hell = ref("#");
+const drama_hell_st = ref("#");
+const drama_hell_nd = ref("#");
 const music_hell = ref("#");
 const art_hell = ref("#");
 const dance_hell = ref("#");
@@ -14,8 +14,8 @@ const language_hell = ref("#");
 watch(datas, (new_data, old_data) => {
   normal_hell.value = new_data.hell[0].link;
   PE_hell.value = new_data.hell[1].link;
-  drama1_hell.value = new_data.hell[2].link;
-  drama2_hell.value = new_data.hell[3].link;
+  drama_hell_st.value = new_data.hell[2].link;
+  drama_hell_nd.value = new_data.hell[3].link;
   music_hell.value = new_data.hell[4].link;
   art_hell.value = new_data.hell[5].link;
   dance_hell.value = new_data.hell[6].link;
@@ -23,7 +23,8 @@ watch(datas, (new_data, old_data) => {
 });
 </script>
 <template>
-  <div id="register" class="flex justify-center pt-10">
+  <div id="register" class="h-12"></div>
+  <div class="flex justify-center pt-10">
     <div
       class="flex items-center justify-center rounded-t-lg bg-[#34559D] px-5 py-1 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >
@@ -72,19 +73,19 @@ watch(datas, (new_data, old_data) => {
         </a>
         <!-- 戲劇班 -->
         <div class="flex flex-col gap-2">
-          <a :href="drama1_hell"
+          <a :href="drama_hell_st"
             ><div
               class="w-70 flex h-56 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:py-16"
             >
               <span class="text-center text-2xl font-black text-white">
-                戲劇班分班榜單<br />及報到編號
+                戲劇班分發榜單<br />及報到編號
               </span>
               <span class="pt-4 text-center text-white lg:pt-4">
                 *備取生遞補名單預定<br />7/12-17:00公告
               </span>
             </div></a
           >
-          <a :href="drama2_hell">
+          <a :href="drama_hell_nd">
             <div
               class="w-70 flex h-20 flex-col items-center justify-center rounded-2xl bg-[#34559D] lg:h-24"
             >

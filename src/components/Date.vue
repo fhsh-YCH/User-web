@@ -72,7 +72,8 @@ const temp_datas = [
 ];
 </script>
 <template>
-  <div id="date" class="flex justify-center pb-2 pt-12">
+  <div id="date" class="h-10"></div>
+  <div class="flex justify-center pb-2 pt-12">
     <span
       class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >

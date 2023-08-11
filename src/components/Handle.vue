@@ -3,7 +3,8 @@ import { datas } from "../utils.js";
 </script>
 <template>
   <!-- Desktop -->
-  <div id="handlee" class="hidden md:hidden lg:block">
+  <div id="handlee" class="h-12"></div>
+  <div class="hidden md:hidden lg:block">
     <div class="flex justify-center pb-6 pt-10">
       <div
         class="rounded-md bg-[#34559D] px-3 py-2 text-white shadow-md lg:text-2xl"

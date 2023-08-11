@@ -2,7 +2,7 @@
 import NavBar from "./components/NavBar.vue";
 import TimeTable from "./components/TimeTable.vue";
 import ReportOnline from "./components/ReportOnline.vue";
-//import Handbook from "./components/CourseHandbook.vue";
+import Handbook from "./components/CourseHandbook.vue";
 //import Help from "./components/Help.vue";
 import HomeWork from "./components/HomeWork.vue";
 import Handle from "./components/Handle.vue";
@@ -15,7 +15,9 @@ import Report from "./components/Report.vue";
 //import PPT from "./components/Presentation.vue";
 import { req, data_arrive_model_control } from "./utils.js";
 //import AD from "./components/AD.vue";
+import closed from "./componentss/closed.vue";
 import Calendar from "./components/Calendar.vue";
+//import Info from "./components/StudentInfo.vue";
 
 req();
 </script>
@@ -39,7 +41,7 @@ req();
     <NavBar />
     <!-- 新生入學時程表 -->
     <TimeTable />
-    <!-- 新生行事曆暨檢核表 -->
+    <!-- 行事曆 -->
     <Calendar />
     <!-- 公告榜單及報到編號-->
     <ReportOnline />
@@ -64,14 +66,17 @@ req();
       <!-- 高一line家長群 -->
       <Line />
       <!-- 選課輔導手冊 -->
-      <!-- <Handbook />  -->
+      <Handbook />
       <!-- 入學說明簡報 -->
       <!-- <PPT /> -->
     </div>
     <!-- Footer -->
     <Foooter />
-    <!-- AD -->
-    <!-- <AD /> -->
+    <!-- AD 
+    <AD />-->
+    <!-- 新生填寫資料 
+    <Info />-->
+    <closed />
   </div>
 </template>
 

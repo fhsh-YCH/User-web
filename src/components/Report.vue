@@ -1,6 +1,7 @@
 <script setup></script>
 <template>
-  <div id="report" class="flex justify-center pt-10">
+  <div id="report" class="h-12"></div>
+  <div class="flex justify-center pt-10">
     <div
       class="flex items-center justify-center rounded-t-lg bg-[#34559D] px-5 py-1 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >
@@ -94,9 +95,6 @@
             <span class="pt-4 text-center text-[#34559D] lg:pt-4">
               7月12日 9:00-12:00
             </span>
-            <span class="pt-4 text-center text-[#34559D] lg:pt-4">
-              *建議10:00前報到<br />以利參加10:00-11:00說明會
-            </span>
           </div>
           <!-- 美術班 -->
 
@@ -109,9 +107,6 @@
             <span class="pt-4 text-center text-[#34559D] lg:pt-4">
               7月12日 9:00-12:00
             </span>
-            <span class="pt-4 text-center text-[#34559D] lg:pt-4">
-              *建議10:00前報到<br />以利參加10:00-11:00說明會
-            </span>
           </div>
           <!-- 舞蹈班 -->
 
@@ -123,9 +118,6 @@
             </span>
             <span class="pt-4 text-center text-[#34559D] lg:pt-4">
               7月12日 9:00-12:00
-            </span>
-            <span class="pt-4 text-center text-[#34559D] lg:pt-4">
-              *建議10:00前報到<br />以利參加10:00-11:00說明會
             </span>
           </div>
         </div>

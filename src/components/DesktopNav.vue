@@ -6,7 +6,7 @@
       <div
         v-for="(item, index) in navItems"
         :key="index"
-        class="text-white lg:px-1 lg:text-sm xl:px-3 xl:text-base"
+        class="text-white lg:px-1 lg:text-sm xl:px-2 xl:text-base"
       >
         <a
           @click="handleItemClick(index)"

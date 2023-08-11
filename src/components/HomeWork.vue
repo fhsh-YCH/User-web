@@ -4,7 +4,8 @@ import hw from "../componentss/hw.vue";
 </script>
 
 <template>
-  <div id="homework" class="flex justify-center pt-8">
+  <div id="homework" class="h-12"></div>
+  <div class="flex justify-center pt-8">
     <div
       class="flex items-center justify-center rounded-t-lg bg-[#34559D] px-5 py-1 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >

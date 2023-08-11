@@ -14,7 +14,7 @@
       <p class="pt-1 text-3xl font-bold text-[#34559D]">復興高中新生網頁</p>
     </div>
   </nav>
-  <div id="timeline"></div>
+  <div id="timeline" class="lg:h-12"></div>
 
   <section class="pt-20 md:pt-20 lg:pt-10"></section>
   <div class="flex justify-center">
@@ -28,12 +28,12 @@
     <div
       class="rounded-lg border border-[#34559D] bg-white p-3 shadow-md md:hidden lg:hidden"
     >
-      <img src="../assets/timeline.png" class="w-[300px]" />
+      <img src="../assets/time_line.png" class="w-[300px]" />
     </div>
     <div
       class="hidden rounded-lg border border-[#34559D] bg-white shadow-md md:block md:p-4 lg:block lg:p-14"
     >
-      <img src="../assets/timetable.png" class="md:w-[550px] lg:w-[820px]" />
+      <img src="../assets/time_table.png" class="md:w-[550px] lg:w-[820px]" />
     </div>
   </div>
 </template>

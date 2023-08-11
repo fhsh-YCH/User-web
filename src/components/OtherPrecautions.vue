@@ -1,4 +1,3 @@
-npm
 <script setup>
 import Other from "../componentss/Other.vue";
 import { datas } from "../utils.js";
@@ -96,7 +95,8 @@ const temp_datas = [
 ];
 </script>
 <template>
-  <div id="otherprecautions" class="flex justify-center pt-12">
+  <div id="otherprecautions" class="h-10"></div>
+  <div class="flex justify-center pt-12">
     <span
       class="rounded-t-md bg-[#34559D] px-3 py-2 text-white shadow-md md:px-4 md:py-1 md:text-xl lg:px-6 lg:py-2 lg:text-2xl"
     >

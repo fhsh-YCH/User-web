@@ -10,7 +10,7 @@ import { datas } from "../utils.js";
       :href="data.link"
     >
       <button
-        class="rounded-xl bg-[#009A35] px-24 py-3 text-center text-xl font-semibold text-white shadow-md md:py-4 md:text-2xl lg:px-32 lg:py-6 lg:text-3xl"
+        class="max-w-12 rounded-xl bg-[#009A35] px-12 py-3 text-center text-xl font-semibold text-white shadow-md md:py-4 md:text-2xl lg:px-24 lg:py-6 lg:text-3xl"
       >
         {{ data.title }}
       </button>
